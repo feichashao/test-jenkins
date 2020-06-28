@@ -43,7 +43,7 @@ properties(
 )
 
 
-timestamp {
+timestamps {
  node('master') {
     checkout scm
     stage('Build') {
