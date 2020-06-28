@@ -8,7 +8,7 @@ properties(
           name: 'CLUSTER_ID',
           description: 'OpenShift Dedicated Cluster Id',
           $class: 'hudson.model.StringParameterDefinition',
-          defaultValue: ''
+          defaultValue: 'default_value'
         ],
         [
           name: 'SKIP_STATUSPAGE',
