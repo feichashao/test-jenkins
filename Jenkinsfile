@@ -39,6 +39,7 @@ properties(
         ],
       ]
     ],
+    pipelineTriggers([[$class: "TimerTrigger", spec: "H/5 * * * *"]])
   ]
 )
 
