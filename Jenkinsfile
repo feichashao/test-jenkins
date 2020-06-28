@@ -39,7 +39,7 @@ properties(
         ],
       ]
     ],
-    pipelineTriggers([[$class: "TimerTrigger", spec: "H/5 * * * *"]])
+    pipelineTriggers([[$class: "TimerTrigger", spec: "H/10 * * * *"]])
   ]
 )
 
@@ -49,7 +49,9 @@ timestamps {
     checkout scm
     stage('Build') {
             cluster_name = params.CLUSTER_ID
-            sh "echo hello ${CLUSTER_ID}"
+            for (int i = 0; i < 4; i++) {
+            	sh "echo hello ${CLUSTER_ID} ${i}"
+            }
     }
  }
 }
