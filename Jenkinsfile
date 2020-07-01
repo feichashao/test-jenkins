@@ -31,6 +31,7 @@ timestamps {
                 echo "line8" >> output
                 echo "line9" >> output
                 echo "line10" >> output
+                echo "line11" >> output
                 echo "line12" >> output
                 echo "line13" >> output
                 echo "line14" >> output
